@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #FCE0E5; /* Light pink background */
+    margin: 0;
+    padding: 0;
+    background-image: url(../image/wedd2.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 650px; 
+    margin-bottom: 80px;
+}
+
+header {
+    background-color:  #FCE0E5;/* Light pink header background */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+}
+
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;  
+}
+
+
+main {
+    text-align: right;
+    padding: 90px;
+    
+
+}
+
+form {
+    width: 300px;
+    margin-left: 70%;
+   
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color:  #9f3145; /* Light pink button background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 60%;
+    margin-top: 20px;
+    margin-right: 50PX;
+    
+}
+
+.container h1{
+    font-family: 'Calistoga';
+    font-weight: 600;
+    font-size: 55px;
+    position: relative;
+    margin-bottom: 15px;
+    margin-right: 10%;
+}
+
+.container p{
+    font-family: 'Baloo Thambi 2';
+    font-size: 20px;
+    position: relative;
+    /* right: 10px; */
+    padding-left: 50px;
+    margin-right: 13%;
+}
