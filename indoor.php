@@ -7,14 +7,28 @@
     <link rel="stylesheet" href="../Wedding/css/indoor.css">
 </head>
 <body>
-    <nav>
-        <div class="btn">
-          <input type="text" placeholder="search">
-          <h1 class="btn-txt1">mau menjadi vendor?</h1>
-          <button type="button" class="masuk">Masuk</button>
-          <button type="button" class="daftar">Daftar</button>
+  <nav>
+    <div class="btn">
+      <img src="./image/logo-edit-removebg.png" alt="logo-nav">
+      <input type="text" placeholder="Search">
+      <?php if ($isLoggedIn): ?>
+        <div class="profile-user">
+          <div>
+            <span><?php echo htmlspecialchars($business_name); ?></span>
+          </div>
+          <div>
+            <a href="logout.php" class="logout-btn">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+          </div>
         </div>
-      </nav>
+      <?php else: ?>
+        <h1 class="btn-txt1">Mau menjadi vendor?</h1>
+        <a href="login.php" class="masuk">Masuk</a>
+        <a href="signup.php" class="daftar">Daftar</a>
+      <?php endif; ?>
+    </div>
+  </nav>
       <hr>
     
       <!-- navigation -->

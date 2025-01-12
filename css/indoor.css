@@ -4,7 +4,6 @@
 * {
     margin: 0;
     background-color: #FEF3E2;
-    overflow-x: hidden;
 }
 /* search */
 .btn {
@@ -12,6 +11,8 @@
     margin-left: 15%;
     display: flex;
     gap: 19.5px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 input {
@@ -37,9 +38,14 @@ button {
     background-color: brown;
 }
 
+.btn img {
+    width: 20%;
+    height: auto;
+    margin-left: -20%;
+}
 
 .btn .daftar {
-    /* margin-left: 20px; */
+    margin-left: -5%; 
     background-color: #DE7777;
     color: #FFF2F2;
     width: 82px;
@@ -276,9 +282,8 @@ button a {
     background-color: #726863;
 }
 .logo .logo-footer {
-    margin-left: 10%;
-    margin-top: 8%;
-    width: 100%;
+    width: 25%;
+    height: auto;
     background-color: #726863;
 }
 

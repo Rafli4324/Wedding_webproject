@@ -48,15 +48,18 @@ $conn->close();
   <!-- seaacrh -->
   <nav>
     <div class="btn">
+      <img src="./image/logo-edit-removebg.png" alt="logo-nav">
       <input type="text" placeholder="Search">
       <?php if ($isLoggedIn): ?>
-        <div>
-          <div class="profile-user">
+        <div class="profile-user">
+          <div>
             <span><?php echo htmlspecialchars($business_name); ?></span>
           </div>
-          <a href="logout.php" class="logout-btn">
-            <i class="fas fa-sign-out-alt"></i> Logout
-          </a>
+          <div>
+            <a href="logout.php" class="logout-btn">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </a>
+          </div>
         </div>
       <?php else: ?>
         <h1 class="btn-txt1">Mau menjadi vendor?</h1>
@@ -72,7 +75,7 @@ $conn->close();
     <div class="navbar">
       <a href="#" class="home">Home</a>
       <a href="#" class="blog">Blog</a>
-      <a href="vendor.html" class="vendor">Vendor</a>
+      <a href="vendor.php" class="vendor">Vendor</a>
       <a href="#" class="contact">Contact Us</a>
     </div>
   </nav>
@@ -90,7 +93,7 @@ $conn->close();
     <div class="Indoor">
       <h1 class="gmbr-txt1">Indoor Cyber2tower</h1>
       <p class="gmbr-p1">By La'SEINE Function Hall</p>
-      <a href="indoor.html"><button class="dtl">Detail</button></a>
+      <a href="indoor.php"><button class="dtl">Detail</button></a>
     </div>
   </section>
 <!-- image 1 end -->
@@ -162,7 +165,7 @@ $conn->close();
   <footer>
   <div class="footer-content">
     <div  class="logo">
-      <img src="hxh.png" alt="" class="logo-footer"> 
+      <img src="./image/logo-removebg.png" alt="" class="logo-footer"> 
     </div>
     <div class="text-footer">
       <h1 class="info-ftr">Hubungi Kami</h1>

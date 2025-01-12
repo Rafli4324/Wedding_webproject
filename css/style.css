@@ -4,7 +4,6 @@
 * {
     margin: 0;
     background-color: #FEF3E2;
-    overflow-x: hidden;
 }
 
 /* search */
@@ -13,6 +12,8 @@
     margin-left: 15%;
     display: flex;
     gap: 19.5px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 input {
@@ -38,19 +39,25 @@ button {
     background-color: brown;
 }
 
+.btn img {
+    width: 20%;
+    height: auto;
+    margin-left: -20%;
+}
 
 .btn .daftar {
-    /* margin-left: 20px; */
+    margin-left: -5%; 
     background-color: #DE7777;
     width: 95px;
     height: 30px;
     color: #ffffff;
     border: 0.5px #DE7777 solid;
-    border-radius:9999px;
+    border-radius:50px;
     text-align: center;
-    margin-bottom: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    /* padding-bottom: 0.5rem; */
+    text-decoration: none;
 }
 
 .btn .daftar:hover{
@@ -66,17 +73,30 @@ button {
     height: 30px;
     color: #DE7777;
     border: 0.5px #DE7777 solid;
-    border-radius:9999px;
+    border-radius:50px;
     text-align: center;
-    margin-bottom: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    /* padding-bottom: 0.5rem; */
+    text-decoration: none;
 }
 
 .btn .masuk:hover{
     background-color: #DE7777;
     color: #FFF2F2;
     border: 2px #FFF2F2 solid;
+}
+.profile-user{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.logout-btn{
+    background-color: #000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 hr {
@@ -480,9 +500,8 @@ hr {
     background-color: #726863;
 }
 .logo .logo-footer {
-    margin-left: 10%;
-    margin-top: 8%;
-    width: 100%;
+    width: 25%;
+    height: auto;
     background-color: #726863;
 }
 
