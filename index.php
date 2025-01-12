@@ -27,7 +27,7 @@
     <div class="navbar">
       <a href="#" class="home">Home</a>
       <a href="#" class="blog">Blog</a>
-      <a href="#" class="vendor">Vendor</a>
+      <a href="vendor.html" class="vendor">Vendor</a>
       <a href="#" class="contact">Contact Us</a>
     </div>
   </nav>

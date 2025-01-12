@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($stmt->execute()) {
         // Redirect ke halaman utama jika berhasil
-        header("Location: index.html");
+        header("Location: index.php");
         exit();
     } else {
         // Tampilkan pesan error jika terjadi kesalahan
