@@ -1,3 +1,38 @@
+<?php
+// Mulai session untuk mengecek status login
+session_start();
+// Debugging: Uncomment the following line to check session variables
+
+
+// Inklusi koneksi database
+include 'conn.php';
+
+// Mengecek apakah pengguna sudah login
+$isLoggedIn = isset($_SESSION['user_id']);  // Periksa apakah user_id ada di session
+$business_name = "";  // Variabel untuk menyimpan nama bisnis
+
+// Jika pengguna sudah login, ambil nama bisnis
+if ($isLoggedIn) {
+    $user_id = $_SESSION['user_id'];  // Ambil user_id dari session
+
+    // Perbaiki nama tabel jika salah
+    $sql = "SELECT business_name FROM user WHERE id_user = ?"; // Ganti 'user' dengan 'user'
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param('i', $user_id); // Bind parameter untuk mencegah SQL Injection
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    // Jika ada hasil, ambil business-name
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $business_name = $row['business_name'];
+    }
+    $stmt->close(); // Menutup statement prepared
+}
+
+// Menutup koneksi database
+$conn->close();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,15 +48,25 @@
   <!-- seaacrh -->
   <nav>
     <div class="btn">
-        <input type="text" placeholder="search">
+      <input type="text" placeholder="Search">
+      <?php if ($isLoggedIn): ?>
+        <div>
+          <div class="profile-user">
+            <span><?php echo htmlspecialchars($business_name); ?></span>
+          </div>
+          <a href="logout.php" class="logout-btn">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </a>
+        </div>
+      <?php else: ?>
         <h1 class="btn-txt1">Mau menjadi vendor?</h1>
-            <button type="button" class="masuk">Masuk</button>
-            <button type="button" class="daftar">Daftar</button>
+        <a href="login.php" class="masuk">Masuk</a>
+        <a href="signup.php" class="daftar">Daftar</a>
+      <?php endif; ?>
     </div>
   </nav>
   <hr>
-
-
+  
   <!-- navigation -->
   <nav class="navbar-nav">
     <div class="navbar">
@@ -31,13 +76,13 @@
       <a href="#" class="contact">Contact Us</a>
     </div>
   </nav>
-
-  <SECtion>
+<!-- Content Section -->
+  <section>
     <div class="container">
       <h1 class="container1">Venue Di Jakarta...</h1>
       <h1 class="container2">Lihat Rekomendasi dengan semua budget</h1>
     </div>
-  </SECtion>
+  </section>
 
   <!-- image 1-->
   <section class="gambar1">
@@ -50,8 +95,6 @@
   </section>
 <!-- image 1 end -->
 
-
-
 <!-- image 2 -->
   <section class="gambar2">
     <div class="Indoor2">
@@ -63,9 +106,7 @@
   </section>
 <!-- image 2 end -->
 
-
-<!-- image  -->
-
+<!-- image  3-->
   <section class="gambar3">
     <img src="../Wedding/image/ikk.jpg" alt="" class="gbr3">
     <div class="Indoor3">
@@ -74,9 +115,7 @@
       <button class="dtl3">Detail</button>
     </div>
   </section>
-
   <!-- image 3 end -->
-
 
   <!-- Bli venue -->
   <SECtion>
@@ -119,26 +158,23 @@
   </section>
 <!-- image bali 6 eng  -->
   
-  <!-- footer -->
-   <footer>
-    <div class="footer-content">
-        <div  class="logo">
-          <img src="hxh.png" alt="" class="logo-footer"> 
-        </div>
-
-          <div class="text-footer">
-            <h1 class="info-ftr">Hubungi Kami</h1>
-            <p class="number-ftr">085241571891/08131374987</p>
-
-            <div class="img-footer">
-              <img src="../Wedding/image/facebook 1.png" alt="" class="img-footer1">
-              <img src="../Wedding/image/twitter 1.png" alt="" class="img-footer2">
-              <img src="../Wedding/image/instagram 1.png" alt="" class="img-footer3">
-              <img src="../Wedding/image/whatsapp 1.png" alt="" class="img-footer4">
-          </div>
-          </div>
+  <!-- Footer -->
+  <footer>
+  <div class="footer-content">
+    <div  class="logo">
+      <img src="hxh.png" alt="" class="logo-footer"> 
+    </div>
+    <div class="text-footer">
+      <h1 class="info-ftr">Hubungi Kami</h1>
+      <p class="number-ftr">085241571891/08131374987</p>
+      <div class="img-footer">
+        <img src="./image/facebook 1.png" alt="" class="img-footer1">
+        <img src="./image/twitter 1.png" alt="" class="img-footer2">
+        <img src="./image/instagram 1.png" alt="" class="img-footer3">
+        <img src="./image/whatsapp 1.png" alt="" class="img-footer4">
       </div>
-   </footer>
-   <!-- footer end -->
+    </div>
+  </div>
+  </footer>
 </body>
 </html>
