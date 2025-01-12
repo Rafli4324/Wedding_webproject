@@ -1,3 +1,10 @@
+<?php
+session_start();
+// var_dump($_SESSION);
+$isLoggedIn = isset($_SESSION['email']);  
+$role = $isLoggedIn && isset($_SESSION['role']) ? $_SESSION['role'] : null;
+$business_name = $isLoggedIn && isset($_SESSION['business_name']) ? $_SESSION['business_name'] : "Guest"; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +32,7 @@
       <?php else: ?>
         <h1 class="btn-txt1">Mau menjadi vendor?</h1>
         <a href="login.php" class="masuk">Masuk</a>
-        <a href="signup.php" class="daftar">Daftar</a>
+        <a href="sigin.php" class="daftar">Daftar</a>
       <?php endif; ?>
     </div>
   </nav>
@@ -37,7 +44,7 @@
           <a href="index.php" class="home">Home</a>
           <a href="#" class="blog">Blog</a>
           <a href="#" class="vendor">Vendor</a>
-          <a href="#" class="contact">Contact Us</a>
+          <a href="index2.php" class="contact">About Us</a>
         </div>
       </nav>
 
@@ -140,7 +147,7 @@
       <footer>
         <div class="footer-content">
             <div  class="logo">
-              <img src="hxh.png" alt="" class="logo-footer"> 
+            <img src="./image/logo-removebg.png" alt="" class="logo-footer">  
             </div>
     
               <div class="text-footer">

@@ -67,7 +67,7 @@ if (isset($_POST['login'])) {
         <nav>
             <ul>
                 <li><a href="#">Faq</a></li>
-                <li><a href="index2.html">About</a></li>
+                <li><a href="index2.php">About</a></li>
                 <li><a href="#">Explore</a></li>
                 <li><a href="index.php">Home</a></li>
             </ul>

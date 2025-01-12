@@ -1,37 +1,9 @@
 <?php
-// Mulai session untuk mengecek status login
 session_start();
-// Debugging: Uncomment the following line to check session variables
-
-
-// Inklusi koneksi database
-include 'conn.php';
-
-// Mengecek apakah pengguna sudah login
-$isLoggedIn = isset($_SESSION['user_id']);  // Periksa apakah user_id ada di session
-$business_name = "";  // Variabel untuk menyimpan nama bisnis
-
-// Jika pengguna sudah login, ambil nama bisnis
-if ($isLoggedIn) {
-    $user_id = $_SESSION['user_id'];  // Ambil user_id dari session
-
-    // Perbaiki nama tabel jika salah
-    $sql = "SELECT business_name FROM user WHERE id_user = ?"; // Ganti 'user' dengan 'user'
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param('i', $user_id); // Bind parameter untuk mencegah SQL Injection
-    $stmt->execute();
-    $result = $stmt->get_result();
-
-    // Jika ada hasil, ambil business-name
-    if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        $business_name = $row['business_name'];
-    }
-    $stmt->close(); // Menutup statement prepared
-}
-
-// Menutup koneksi database
-$conn->close();
+// var_dump($_SESSION);
+$isLoggedIn = isset($_SESSION['email']);  
+$role = $isLoggedIn && isset($_SESSION['role']) ? $_SESSION['role'] : null;
+$business_name = $isLoggedIn && isset($_SESSION['business_name']) ? $_SESSION['business_name'] : "Guest"; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -64,7 +36,7 @@ $conn->close();
       <?php else: ?>
         <h1 class="btn-txt1">Mau menjadi vendor?</h1>
         <a href="login.php" class="masuk">Masuk</a>
-        <a href="signup.php" class="daftar">Daftar</a>
+        <a href="sigin.php" class="daftar">Daftar</a>
       <?php endif; ?>
     </div>
   </nav>
@@ -76,7 +48,7 @@ $conn->close();
       <a href="#" class="home">Home</a>
       <a href="#" class="blog">Blog</a>
       <a href="vendor.php" class="vendor">Vendor</a>
-      <a href="#" class="contact">Contact Us</a>
+      <a href="index2.php" class="contact">About Us</a>
     </div>
   </nav>
 <!-- Content Section -->

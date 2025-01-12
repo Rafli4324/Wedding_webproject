@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <nav>
             <ul>
                 <li><a href="#">Faq</a></li>
-                <li><a href="index2.html">About</a></li>
+                <li><a href="index2.php">About</a></li>
                 <li><a href="#">Explore</a></li>
                 <li><a href="index.php">Home</a></li>
             </ul>
@@ -61,16 +61,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h1>Welcome!</h1>
             <p class="Create">Create Your Business Profile</p>
             <form action="sigin.php" method="POST">
-                <label for="service-category"></label>
+                <label for="service-category">Service Cateory</label>
                 <input type="text" id="service-category" name="service_category" placeholder="Service Category" required>
     
-                <label for="business_name"></label>
-                <input type="text" id="business_name" name="business_name" placeholder="Business Name" required>
+                <label for="business_name">Name</label>
+                <input type="text" id="business_name" name="business_name" placeholder="Name" required>
     
-                <label for="email"></label>
+                <label for="email">Email</label>
                 <input type="email" id="email" name="email" placeholder="Email" required>
     
-                <label for="password"></label>
+                <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="Password" required>
     
                 <button type="submit">SIGN UP</button>
