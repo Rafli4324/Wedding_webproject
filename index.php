@@ -13,13 +13,14 @@
   <!-- seaacrh -->
   <nav>
     <div class="btn">
-      <input type="text" placeholder="search">
-      <h1 class="btn-txt1">mau menjadi vendor?</h1>
-      <button type="button" class="masuk">Masuk</button>
-      <button type="button" class="daftar">Daftar</button>
+        <input type="text" placeholder="search">
+        <h1 class="btn-txt1">Mau menjadi vendor?</h1>
+            <button type="button" class="masuk">Masuk</button>
+            <button type="button" class="daftar">Daftar</button>
     </div>
   </nav>
   <hr>
+
 
   <!-- navigation -->
   <nav class="navbar-nav">
@@ -40,11 +41,11 @@
 
   <!-- image 1-->
   <section class="gambar1">
-    <img src="gambar1.jpg" alt="" class="gbr">
+    <img src="../Wedding/image/la'seine.jpg" alt="" class="gbr">
     <div class="Indoor">
       <h1 class="gmbr-txt1">Indoor Cyber2tower</h1>
       <p class="gmbr-p1">By La'SEINE Function Hall</p>
-      <button class="dtl">Detail</button>
+      <a href="indoor.html"><button class="dtl">Detail</button></a>
     </div>
   </section>
 <!-- image 1 end -->
@@ -58,7 +59,7 @@
       <p class="gmbr-p2">By Preciosa Wedding</p>
       <button class="dtl2">Detail</button>
     </div>
-    <img src="gmbr2.jpg" alt="" class="gbr2">
+    <img src="../Wedding/image/preciosa.jpg" alt="" class="gbr2">
   </section>
 <!-- image 2 end -->
 
@@ -66,7 +67,7 @@
 <!-- image  -->
 
   <section class="gambar3">
-    <img src="gmbr3.jpg" alt="" class="gbr3">
+    <img src="../Wedding/image/ikk.jpg" alt="" class="gbr3">
     <div class="Indoor3">
       <h1 class="gmbr-txt3">Menara Mandiri 9F </h1>
       <p class="gmbr-p3">By IkkWedding.id</p>
@@ -87,10 +88,10 @@
 
   <!-- image bali 4  -->
   <section class="gambar4">
-    <img src="bli1.jpg" alt="" class="gbr4">
+    <img src="../Wedding/image/Emerald.png" alt="" class="gbr4">
     <div class="Indoor4">
-      <h1 class="gmbr-txt4">Indoor Cyber2tower</h1>
-      <p class="gmbr-p4">By La'SEINE Function Hall</p>
+      <h1 class="gmbr-txt4">Emerald Forest</h1>
+      <p class="gmbr-p4">By Tirtha Bali</p>
       <button class="dtl4">Detail</button>
     </div>
   </section>
@@ -99,20 +100,20 @@
   <!-- image bali 5  -->
   <section class="gambar5">
     <div class="Indoor5">
-      <h1 class="gmbr-txt5">Kuningan City Ballroom</h1>
-      <p class="gmbr-p5">By Preciosa Wedding</p>
+      <h1 class="gmbr-txt5">Ayana Villa</h1>
+      <p class="gmbr-p5">By Ayana Resort</p>
       <button class="dtl5">Detail</button>
     </div>
-    <img src="bli2.jpg" alt="" class="gbr5">
+    <img src="../Wedding/image/ayana.jpg" alt="" class="gbr5">
   </section>
 <!-- image bali 5 end -->
 
 <!-- image bali 6  -->
   <section class="gambar6">
-    <img src="bli3.jpg" alt="" class="gbr6">
+    <img src="../Wedding/image/alila.jpg" alt="" class="gbr6">
     <div class="Indoor6">
-      <h1 class="gmbr-txt6">Menara Mandiri 9F </h1>
-      <p class="gmbr-p6">By IkkWedding.id</p>
+      <h1 class="gmbr-txt6">Alila Seminyak Penthouse </h1>
+      <p class="gmbr-p6">By Alila Seminyak Bali</p>
       <button class="dtl6">Detail</button>
     </div>
   </section>
@@ -130,10 +131,10 @@
             <p class="number-ftr">085241571891/08131374987</p>
 
             <div class="img-footer">
-              <img src="image-black-facebook-logo-png-26.png" alt="" class="img-footer1">
-              <img src="twitter-x-logo-png-9.png" alt="" class="img-footer2">
-              <img src="ig.png" alt="" class="img-footer3">
-              <img src="whatsapp-icon-1979x2048-y3bz6p8d.png" alt="" class="img-footer4">
+              <img src="../Wedding/image/facebook 1.png" alt="" class="img-footer1">
+              <img src="../Wedding/image/twitter 1.png" alt="" class="img-footer2">
+              <img src="../Wedding/image/instagram 1.png" alt="" class="img-footer3">
+              <img src="../Wedding/image/whatsapp 1.png" alt="" class="img-footer4">
           </div>
           </div>
       </div>

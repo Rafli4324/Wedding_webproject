@@ -1,0 +1,275 @@
+:root{
+    --f:Simonetta
+}
+* {
+    margin: 0;
+    background-color: #FFF2F2;
+    overflow-x: hidden;
+}
+/* search */
+.btn {
+    margin-top: 30px;
+    margin-left: 15%;
+    display: flex;
+    gap: 19.5px;
+}
+
+input {
+    width: 783px;
+    height: 34px;
+    border-radius: 5px;
+    background-color: #EBEBEB;
+    border: 1px;
+    text-indent: 20px;
+    
+}
+
+.btn .btn-txt1{
+    font-family: var(--f);
+    font-weight: 500;
+}
+
+button {
+    border-radius: 10px;
+    padding: 5px;
+    width: 60px;
+    color: antiquewhite;
+    background-color: brown;
+}
+
+
+.btn .daftar {
+    /* margin-left: 20px; */
+    background-color: #DE7777;
+    color: #FFF2F2;
+    width: 82px;
+    height: 42px;
+    border: none;
+}
+
+.btn .daftar:hover{
+    background-color: #FFF2F2;
+    color: #DE7777;
+    border: 1px #DE7777 solid;
+}
+
+.btn .masuk {
+    /* margin-left: 20px; */
+    background-color: #FFF2F2;
+    width: 82px;
+    height: 42px;
+    color: #DE7777;
+    border: 0.5px #DE7777 solid;
+}
+
+.btn .masuk:hover{
+    background-color: #DE7777;
+    color: #FFF2F2;
+    border: 2px #FFF2F2 solid;
+}
+
+hr {
+    margin-top: 30px;
+    border-color: black;
+    width: auto;
+
+}
+
+/* search end */
+
+
+/* navbar */
+.navbar-nav {
+    margin-top: 5px;
+    border-bottom: 2px solid black;
+    margin-bottom: 2%;
+}
+
+.navbar-nav .navbar {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 60px;
+}
+
+.navbar-nav .navbar .home {
+    text-decoration: none;
+    color: black;
+    margin-left: 2%;
+    font-size: 30px;
+    font-family: var(--f);
+    font-weight: 100;
+}
+
+.navbar-nav .navbar .blog {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: var(--f);
+    font-weight: 100;
+}
+.navbar-nav .navbar .vendor {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: var(--f);
+    font-weight: 100;
+}
+
+.navbar-nav .navbar .contact{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-family: var(--f);
+    font-weight: 100;
+}
+/* nav end */
+
+/* section start */
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+.vdr {
+    margin-top: 10%;
+    width: 15%;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 40px;
+    background-color: #ECDFCC;
+  }
+h3 {
+    margin-top: 10%;
+    background-color: #ECDFCC;
+}
+
+p {
+    background-color: #ECDFCC;
+}
+.rating {
+    margin-top: 5%;
+    color: red;
+    background-color: #ECDFCC;
+  }
+.star {
+    background-color: #ECDFCC;
+}
+.vendor1 {
+    width: 100%;
+  }
+
+.vendor2 {
+    width: 100%;
+  }
+
+.vendor3 {
+    width: 100%;
+  }
+
+  .container-2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+  }
+  
+.vdr-2 {
+    width: 15%;
+    text-align: center;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 40px;
+    background-color: #ECDFCC;
+  }
+
+
+.vendor4 {
+    width: 100%;
+  }
+
+.vendor5 {
+    width: 100%;
+  }
+
+.vendor6 {
+    width: 100%;
+  }
+
+
+  /* footer */
+.footer-content {
+    width: auto;
+    margin: auto;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: #726863;
+}
+
+/* logo footer */
+.logo {
+    width:70%;
+    background-color: #726863;
+}
+.logo .logo-footer {
+    margin-left: 10%;
+    margin-top: 8%;
+    width: 100%;
+    background-color: #726863;
+}
+
+/* text footer */
+.text-footer {
+    margin-top: 2%;
+    background-color: #726863;
+    color: #EBEBEB;
+}
+
+.info-ftr {
+   margin-left: 32%;
+   background-color: #726863;
+   
+}
+
+.number-ftr {
+    margin-left: 29%;
+    margin-top: 1%;
+    font-size: 25px;
+    background-color: #726863;
+}
+
+/* img footer */
+.img-footer {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    background-color: #726863;
+    gap: 20px;
+}
+
+.img-footer1{
+    width: 5%;
+    margin-left: 70%;
+    background-color: #726863;
+}
+
+.img-footer2 {
+    width: 5%;
+    background-color: #726863;
+}
+
+.img-footer3 {
+    width: 5%;
+    background-color: #726863;
+}
+
+.img-footer4 {
+    width: 5%;
+    background-color: #726863;
+}
+/* footer end */
+
